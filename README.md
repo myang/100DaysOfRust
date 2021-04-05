@@ -23,4 +23,5 @@ Day 3: [Setup cargo](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 Day 4: [Hands on Rust programming](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)
 1. ::new is an associated function, i.e. static method
 2. Result.expect(str) return result(in case Ok()) or str (in case Err(_) catchall)
-3. match a.cmp(&b) {arm1: pattern1 => fn1, arm2: pattern2 => fn2}
+3. match a.cmp(&mut b) {arm1: pattern1 => fn1, arm2: pattern2 => fn2}
+4. References are immutable by default. Hence &mut b instead of &b
