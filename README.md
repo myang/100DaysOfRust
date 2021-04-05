@@ -25,3 +25,7 @@ Day 4: [Hands on Rust programming](https://doc.rust-lang.org/book/ch02-00-guessi
 2. Result.expect(str) return result(in case Ok()) or str (in case Err(_) catchall)
 3. match a.cmp(&mut b) {arm1: pattern1 => fn1, arm2: pattern2 => fn2}
 4. References are immutable by default. Hence &mut b instead of &b
+
+Day5: Coding Rust with VSCode
+1. use 'task' to build and run
+2. Tabnine autocomplete is very handly
