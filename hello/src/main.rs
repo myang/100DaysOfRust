@@ -4,7 +4,7 @@ use std::cmp::Ordering;
 
 fn main() {
     println!("Hello, 100 days of Rust");
-    let target = rand::thread_rng().gen_range(1, 11);
+    let target = rand::thread_rng().gen_range(1..=9);
 
     loop {
         let mut guess = String::new();
