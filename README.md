@@ -29,3 +29,7 @@ Day 4: [Hands on Rust programming](https://doc.rust-lang.org/book/ch02-00-guessi
 Day5: Coding Rust with VSCode
 1. use 'task' to build and run
 2. Tabnine autocomplete is very handly
+
+Day6: Ownership
+1. memory is managed through a system of ownership with a set of rules that the compiler checks at compile time. None of the ownership features slow down your program while it’s running.
+2. 
