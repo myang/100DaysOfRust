@@ -52,3 +52,7 @@ Something about Trait
 1. Trait definitions are a way to group method signatures together to define a set of behaviors necessary to accomplish some purpose.
 2. Use {} for a default implementation
 3. Default implementations can call other methods in the same trait, even if those other methods don’t have a default implementation.
+
+Day 8: Structs
+1. Struct update syntax: ..struct_instant_1
+2. 
