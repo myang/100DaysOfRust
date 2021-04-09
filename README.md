@@ -55,4 +55,4 @@ Something about Trait
 
 Day 8: Structs
 1. Struct update syntax: ..struct_instant_1
-2. 
+2. impl method(&self)
