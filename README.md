@@ -53,6 +53,12 @@ Something about Trait
 2. Use {} for a default implementation
 3. Default implementations can call other methods in the same trait, even if those other methods don’t have a default implementation.
 
-Day 8: Structs
+Day 8 - 9: Structs
 1. Struct update syntax: ..struct_instant_1
 2. impl method(&self)
+
+Day 10: Enums and Match
+1. you have to convert an Option<T> to a T before you can perform T operations with it. 
+2. The code associated with each arm is an expression, and the resulting value of the expression in the matching arm is the value that gets returned for the entire match expression.
+3. if let arm = enum {} else {}
+4. You’ll see this pattern a lot in Rust code: match against an enum, bind a variable to the data inside, and then execute code based on it.
