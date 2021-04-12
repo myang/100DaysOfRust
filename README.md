@@ -62,3 +62,28 @@ Day 10: Enums and Match
 2. The code associated with each arm is an expression, and the resulting value of the expression in the matching arm is the value that gets returned for the entire match expression.
 3. if let arm = enum {} else {}
 4. You’ll see this pattern a lot in Rust code: match against an enum, bind a variable to the data inside, and then execute code based on it.
+
+Day 11: Vector
+```
+let v = vec![1, 2, 3, 4];
+let first = &v[0]; // immutable borrow 
+v.push(6); // mutable borrow
+```
+1. you can't have mutable and immutable references in the same scope.
+2. We can define an enum whose variants will hold the different value types, and then all the enum variants will be considered the same type: that of the enum. Then we can create a vector that holds that enum and so, ultimately, holds different types:
+```
+    enum SpreadsheetCell {
+        Int(i32),
+        Float(f64),
+        Text(String),
+    }
+
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Text(String::from("blue")),
+        SpreadsheetCell::Float(10.12),
+    ];
+```
+Day 12: String
+1. Store string in UTF-8
+2. let s = format!("{}-{}-{}", s1, s2, s3);
