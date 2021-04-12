@@ -58,10 +58,11 @@ Day 8 - 9: Structs
 2. impl method(&self)
 
 Day 10: Enums and Match
-1. you have to convert an Option<T> to a T before you can perform T operations with it. 
-2. The code associated with each arm is an expression, and the resulting value of the expression in the matching arm is the value that gets returned for the entire match expression.
-3. if let arm = enum {} else {}
-4. You’ll see this pattern a lot in Rust code: match against an enum, bind a variable to the data inside, and then execute code based on it.
+1. Enums are a way of grouping related values so you can use them without spelling mistakes.
+2. you have to convert an Option<T> to a T before you can perform T operations with it. 
+3. The code associated with each arm is an expression, and the resulting value of the expression in the matching arm is the value that gets returned for the entire match expression.
+4. if let arm = enum {} else {}
+5. You’ll see this pattern a lot in Rust code: match against an enum, bind a variable to the data inside, and then execute code based on it.
 
 Day 11: Vector
 ```
