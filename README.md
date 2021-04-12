@@ -84,6 +84,25 @@ v.push(6); // mutable borrow
         SpreadsheetCell::Float(10.12),
     ];
 ```
-Day 12: String
+Day 12: String and HashMap/Dictionary
 1. Store string in UTF-8
 2. let s = format!("{}-{}-{}", s1, s2, s3);
+
+Day 12: HashMap
+1. scores.entry(String::from("Yellow")).or_insert(50);
+2. ownership:
+```
+let field_name = String::from("Favorite color");
+    let field_value = String::from("Blue");
+
+    let mut map = HashMap::new();
+    map.insert(field_name, field_value);
+    // field_name and field_value are invalid at this point
+```
+3. entry().or_insert()
+```
+for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
+    }
+```
