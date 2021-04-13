@@ -107,3 +107,7 @@ for word in text.split_whitespace() {
         *count += 1;
     }
 ```
+Day 13: Error Handling
+1. two groups: recoverable and unrecoverable
+2. Result<T, E> for recoverable and panic! for unrecoverable
+3. 
