@@ -110,4 +110,7 @@ for word in text.split_whitespace() {
 Day 13: Error Handling
 1. two groups: recoverable and unrecoverable
 2. Result<T, E> for recoverable and panic! for unrecoverable
-3. 
+3. When you choose to return a Result value, you give the calling code options rather than making the decision for it.
+
+Day 14: Generics
+1. handling duplication of concepts.
