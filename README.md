@@ -89,7 +89,7 @@ Day 12: String and HashMap/Dictionary
 1. Store string in UTF-8
 2. let s = format!("{}-{}-{}", s1, s2, s3);
 
-Day 12: HashMap
+Day 13: HashMap
 1. scores.entry(String::from("Yellow")).or_insert(50);
 2. ownership:
 ```
@@ -107,10 +107,14 @@ for word in text.split_whitespace() {
         *count += 1;
     }
 ```
-Day 13: Error Handling
+Day 14: Error Handling
 1. two groups: recoverable and unrecoverable
 2. Result<T, E> for recoverable and panic! for unrecoverable
 3. When you choose to return a Result value, you give the calling code options rather than making the decision for it.
 
-Day 14: Generics
+Day 15: Generics
 1. handling duplication of concepts.
+
+Day 16: Reference Lifetime
+
+Day 17: I/O handing
