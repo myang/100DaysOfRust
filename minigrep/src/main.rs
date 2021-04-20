@@ -15,4 +15,5 @@ fn main() {
         .expect("Sth went wrong reading the file");
 
     println!("with text:\n{}", contents);
+    
 }
