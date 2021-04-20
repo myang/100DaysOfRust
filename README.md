@@ -116,5 +116,7 @@ Day 15: Generics
 1. handling duplication of concepts.
 
 Day 16: Reference Lifetime
+1. When returning a reference from a function, the lifetime parameter for the return type needs to match the lifetime parameter for one of the parameters.
+
 
 Day 17: I/O handing
