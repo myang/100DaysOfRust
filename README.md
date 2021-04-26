@@ -138,5 +138,6 @@ mod tests {
 ```
 4. integration testing use dedicate files under dedicate folder: "tests".
 5. use tests/common/mod.rs to store common functions for testing.
-6. 
-7. 
+
+Day 24: Closures
+
