@@ -144,3 +144,5 @@ Day 24 - 27: Closures
 * Fn, not changing environment, 
 * FnMut, changing environment,
 * FnOnce, take ownership.
+
+2. Methods that call iterator.next are called consuming adaptors, because calling them uses up the iterator.
