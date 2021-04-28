@@ -140,4 +140,7 @@ mod tests {
 5. use tests/common/mod.rs to store common functions for testing.
 
 Day 24 - 27: Closures
-1. all ll closures implement at least one of the traits: Fn, FnMut, or FnOnce
+1. all ll closures implement at least one of the traits: 
+* Fn, not changing environment, 
+* FnMut, changing environment,
+* FnOnce, take ownership.
