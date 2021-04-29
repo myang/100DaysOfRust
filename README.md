@@ -139,10 +139,12 @@ mod tests {
 4. integration testing use dedicate files under dedicate folder: "tests".
 5. use tests/common/mod.rs to store common functions for testing.
 
-Day 24 - 27: Closures
+Day 24 - 26: Closures
 1. all ll closures implement at least one of the traits: 
 * Fn, not changing environment, 
 * FnMut, changing environment,
 * FnOnce, take ownership.
 
+Day 27: Iterator
 2. Methods that call iterator.next are called consuming adaptors, because calling them uses up the iterator.
+3. Iterators are one of Rust’s zero-cost abstractions, by which we mean using the abstraction imposes no additional runtime overhead. You can use iterators and closures without fear! They make code seem like it’s higher level but don’t impose a runtime performance penalty for doing so.
