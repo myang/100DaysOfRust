@@ -2,6 +2,8 @@
 **/target/
 *.exe
 *.pdb
+*.lock
+main
 
 # white list
 !.gitignore
