@@ -1,0 +1,6 @@
+# **/ match directories and its files anywhere
+**/target/
+
+# white list
+!.gitignore
+!README.md
