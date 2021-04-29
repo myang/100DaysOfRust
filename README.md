@@ -119,4 +119,30 @@ Day 16: Reference Lifetime
 1. When returning a reference from a function, the lifetime parameter for the return type needs to match the lifetime parameter for one of the parameters.
 
 
-Day 17: I/O handing
+Day 17-23: I/O handing
+
+Day 23: Auto-testing
+1. define test functions which uses assert_eq!(result, function(test_data));
+2. cargo test -- --show-output
+3. unit testing cases are defined in the same source file:
+```
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn internal() {
+        assert_eq!(4, internal_adder(2, 2));
+    }
+}
+```
+4. integration testing use dedicate files under dedicate folder: "tests".
+5. use tests/common/mod.rs to store common functions for testing.
+
+Day 24 - 27: Closures
+1. all ll closures implement at least one of the traits: 
+* Fn, not changing environment, 
+* FnMut, changing environment,
+* FnOnce, take ownership.
+
+2. Methods that call iterator.next are called consuming adaptors, because calling them uses up the iterator.

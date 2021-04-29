@@ -1,0 +1,8 @@
+# **/ match directories and its files anywhere
+**/target/
+*.exe
+*.pdb
+
+# white list
+!.gitignore
+!README.md
