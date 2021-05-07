@@ -149,5 +149,7 @@ Day 27: Iterator
 1. Methods that call iterator.next are called consuming adaptors, because calling them uses up the iterator.
 2. Iterators are one of Rust’s zero-cost abstractions, by which we mean using the abstraction imposes no additional runtime overhead. You can use iterators and closures without fear! They make code seem like it’s higher level but don’t impose a runtime performance penalty for doing so.
 
-Day 28: Packages and Crates
+Day 28 - 31: Packages and Crates
 1. A package must contain zero or one library crates, and no more. It can contain as many binary crates as you’d like, but it must contain at least one crate (either library or binary).
+2. Modelue is private be default. We need to refer to it with "use" to bring items from there into our package’s scope.
+3. running cargo test will run the code examples in your documentation as tests!
