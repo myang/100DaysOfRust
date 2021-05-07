@@ -158,3 +158,5 @@ Day 32: Smart Pointer
 1. Smart pointers are data structures that not only act like a pointer but also have additional metadata and capabilities.
 2. reference counting smart pointer type enables you to have multiple owners of data by keeping track of the number of owners and, when no owners remain, cleaning up the data.
 3. smart pointer from an ordinary struct is that smart pointers implement the Deref and Drop traits
+4. use Box<T> to store data on the heap
+5. 
