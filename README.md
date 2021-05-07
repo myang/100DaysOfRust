@@ -153,3 +153,7 @@ Day 28 - 31: Packages and Crates
 1. A package must contain zero or one library crates, and no more. It can contain as many binary crates as you’d like, but it must contain at least one crate (either library or binary).
 2. Modelue is private be default. We need to refer to it with "use" to bring items from there into our package’s scope.
 3. running cargo test will run the code examples in your documentation as tests!
+
+Day 32: Smart Pointer
+1. Smart pointers are data structures that not only act like a pointer but also have additional metadata and capabilities.
+2. reference counting smart pointer type enables you to have multiple owners of data by keeping track of the number of owners and, when no owners remain, cleaning up the data.
