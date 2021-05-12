@@ -159,4 +159,4 @@ Day 32: Smart Pointer
 2. reference counting smart pointer type enables you to have multiple owners of data by keeping track of the number of owners and, when no owners remain, cleaning up the data.
 3. smart pointer from an ordinary struct is that smart pointers implement the Deref and Drop traits
 4. use Box<T> to store data on the heap
-5. 
+5. We can’t disable the automatic insertion of drop when a value goes out of scope, and we can’t call the drop method explicitly. So, if we need to force a value to be cleaned up early, we can use the std::mem::drop function by passing the value we want to force to be dropped early as an argument.
