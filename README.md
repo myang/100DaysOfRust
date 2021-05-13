@@ -154,10 +154,11 @@ Day 28 - 31: Packages and Crates
 2. Modelue is private be default. We need to refer to it with "use" to bring items from there into our package’s scope.
 3. running cargo test will run the code examples in your documentation as tests!
 
-Day 32: Smart Pointer
+Day 32 - 37: Smart Pointer
 1. Smart pointers are data structures that not only act like a pointer but also have additional metadata and capabilities.
 2. reference counting smart pointer type enables you to have multiple owners of data by keeping track of the number of owners and, when no owners remain, cleaning up the data.
 3. smart pointer from an ordinary struct is that smart pointers implement the Deref and Drop traits
 4. use Box<T> to store data on the heap
 5. When the Deref trait is defined for the types involved, Rust will analyze the types and use Deref::deref as many times as necessary to get a reference to match the parameter’s type.
 6. We can’t disable the automatic insertion of drop when a value goes out of scope, and we can’t call the drop method explicitly. So, if we need to force a value to be cleaned up early, we can use the std::mem::drop function by passing the value we want to force to be dropped early as an argument.
+7. RefCell<T> allows immutable or mutable borrows checked at runtime.
