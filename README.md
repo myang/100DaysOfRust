@@ -162,3 +162,5 @@ Day 32 - 37: Smart Pointer
 5. When the Deref trait is defined for the types involved, Rust will analyze the types and use Deref::deref as many times as necessary to get a reference to match the parameter’s type.
 6. We can’t disable the automatic insertion of drop when a value goes out of scope, and we can’t call the drop method explicitly. So, if we need to force a value to be cleaned up early, we can use the std::mem::drop function by passing the value we want to force to be dropped early as an argument.
 7. RefCell<T> allows immutable or mutable borrows checked at runtime.
+8. Weak_count doesn’t need to be 0 for the Rc<T> instance to be cleaned up.
+9. Calling the upgrade method on a Weak<T> instance, which will return an Option<Rc<T>>. You’ll get a result of Some if the Rc<T> value has not been dropped yet and a result of None if the Rc<T> value has been dropped. Because upgrade returns an Option<Rc<T>>.
