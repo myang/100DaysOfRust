@@ -9,6 +9,6 @@ fn main() {
     post.request_review();
     assert_eq!("", post.content());
 
-    //post.approve();
+    post.approve();
     assert_eq!("I ate a salad for lunch today", post.content());
 }
