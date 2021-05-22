@@ -168,4 +168,4 @@ Day 32 - 37: Smart Pointer
 Day 38 - 40 OOP Features
 1. Inheritance has recently fallen out of favor as a programming design solution in many programming languages because it’s often at risk of sharing more code than necessary. Subclasses shouldn’t always share all characteristics of their parent class but will do so with inheritance. This can make a program’s design less flexible. It also introduces the possibility of calling methods on subclasses that don’t make sense or that cause errors because the methods don’t apply to the subclass. In addition, some languages will only allow a subclass to inherit from one class, further restricting the flexibility of a program’s design.
 2. Trait objects aren’t as generally useful as objects in other languages: their specific purpose is to allow abstraction across common behavior.
- 
+3. An object-oriented pattern won’t always be the best way to take advantage of Rust’s strengths, but is an available option.
