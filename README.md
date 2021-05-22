@@ -165,6 +165,7 @@ Day 32 - 37: Smart Pointer
 8. Weak_count doesn’t need to be 0 for the Rc<T> instance to be cleaned up.
 9. Calling the upgrade method on a Weak<T> instance, which will return an Option<Rc<T>>. You’ll get a result of Some if the Rc<T> value has not been dropped yet and a result of None if the Rc<T> value has been dropped. Because upgrade returns an Option<Rc<T>>.
 
-Day 38 - 39
-OOP Features
+Day 38 - 40 OOP Features
 1. Inheritance has recently fallen out of favor as a programming design solution in many programming languages because it’s often at risk of sharing more code than necessary. Subclasses shouldn’t always share all characteristics of their parent class but will do so with inheritance. This can make a program’s design less flexible. It also introduces the possibility of calling methods on subclasses that don’t make sense or that cause errors because the methods don’t apply to the subclass. In addition, some languages will only allow a subclass to inherit from one class, further restricting the flexibility of a program’s design.
+2. Trait objects aren’t as generally useful as objects in other languages: their specific purpose is to allow abstraction across common behavior.
+ 
