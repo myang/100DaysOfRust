@@ -172,3 +172,4 @@ Day 38 - 40: OOP Features
 
 Day 41 - 42: Patterns and Matching
 1. Use if let expressions mainly as a shorter way to write the equivalent of a match that only matches one case.
+2. Using @ lets us test a value and save it in a variable within one pattern.
