@@ -1,4 +1,5 @@
 # **/ match directories and its files anywhere
+.DS_Store
 **/target/
 *.exe
 *.pdb
