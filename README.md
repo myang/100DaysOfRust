@@ -176,3 +176,11 @@ Day 41 - 42: Patterns and Matching
 
 Day 43: Unsafe
 1. Unions are primarily used to interface with unions in C code.
+
+Day 44 - 46: Advanced Traits and Types
+1. Associated types connect a type placeholder with a trait such that the trait method definitions can use these placeholder types in their signatures.
+2. calling methods with same name: <Dog as Animal>::baby_name()
+3. Newtype pattern, which involves creating a new type in a tuple struct which has one field and be a thin wrapper around the type we want to implement a trait for. Then the wrapper type is local to our crate, and we can implement the trait on the wrapper.
+4. The golden rule of dynamically sized types is that we must always put values of dynamically sized types behind a pointer of some kind.
+
+
