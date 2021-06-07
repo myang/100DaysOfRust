@@ -183,4 +183,6 @@ Day 44 - 46: Advanced Traits and Types
 3. Newtype pattern, which involves creating a new type in a tuple struct which has one field and be a thin wrapper around the type we want to implement a trait for. Then the wrapper type is local to our crate, and we can implement the trait on the wrapper.
 4. The golden rule of dynamically sized types is that we must always put values of dynamically sized types behind a pointer of some kind.
 
-
+Day 47: Advanced Funtion Pointer
+1. Function pointers implement all three of the closure traits (Fn, FnMut, and FnOnce), so you can always pass a function pointer as an argument for a function that expects a closure.
+2. An example of where you would want to only accept fn and not closures is when interfacing with external code that doesn’t have closures: C functions can accept functions as arguments, but C doesn’t have closures.
