@@ -189,3 +189,5 @@ Day 47: Advanced Funtion Pointer
  
 Day 48: Macros
 1. macros are a way of writing code that writes other code, which is known as metaprogramming.
+2. macro definitions are more complex than function definitions because you’re writing Rust code that writes Rust code. Due to this indirection, macro definitions are generally more difficult to read, understand, and maintain than function definitions.
+3. you must define macros or bring them into scope before you call them in a file.
