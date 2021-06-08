@@ -186,3 +186,6 @@ Day 44 - 46: Advanced Traits and Types
 Day 47: Advanced Funtion Pointer
 1. Function pointers implement all three of the closure traits (Fn, FnMut, and FnOnce), so you can always pass a function pointer as an argument for a function that expects a closure.
 2. An example of where you would want to only accept fn and not closures is when interfacing with external code that doesn’t have closures: C functions can accept functions as arguments, but C doesn’t have closures.
+ 
+Day 48: Macros
+1. macros are a way of writing code that writes other code, which is known as metaprogramming.
