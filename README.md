@@ -192,6 +192,6 @@ Day 48: Macros
 2. macro definitions are more complex than function definitions because you’re writing Rust code that writes Rust code. Due to this indirection, macro definitions are generally more difficult to read, understand, and maintain than function definitions.
 3. you must define macros or bring them into scope before you call them in a file.
 
- Day 49: Concurrency
- 1. By leveraging ownership and type checking, many concurrency errors are compile-time errors in Rust rather than runtime errors.
- 
+Day 49 - 50: Concurrency
+1. By leveraging ownership and type checking, many concurrency errors are compile-time errors in Rust rather than runtime errors.
+2. The send function takes ownership of its parameter, and when the value is moved, the receiver takes ownership of it.
