@@ -192,6 +192,7 @@ Day 48: Macros
 2. macro definitions are more complex than function definitions because you’re writing Rust code that writes Rust code. Due to this indirection, macro definitions are generally more difficult to read, understand, and maintain than function definitions.
 3. you must define macros or bring them into scope before you call them in a file.
 
-Day 49 - 50: Concurrency
+Day 49 - 51: Concurrency
 1. By leveraging ownership and type checking, many concurrency errors are compile-time errors in Rust rather than runtime errors.
 2. The send function takes ownership of its parameter, and when the value is moved, the receiver takes ownership of it.
+3. The Sync marker trait indicates that it is safe for the type implementing Sync to be referenced from multiple threads. In other words, any type T is Sync if &T (a reference to T) is Send, meaning the reference can be sent safely to another thread.
