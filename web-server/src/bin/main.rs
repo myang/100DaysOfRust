@@ -10,13 +10,15 @@ fn main() {
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
     let pool = ThreadPool::new(4);
 
-    for stream in listener.incoming() {
+    for stream in listener.incoming().take(3) {
         let stream = stream.unwrap();
         
         pool.execute(|| {
             handle_connection(stream);
         });
     }
+
+    println!("Shutting down.");
 }
 
 fn handle_connection(mut stream: TcpStream) {
@@ -36,14 +38,15 @@ fn handle_connection(mut stream: TcpStream) {
         ("HTTP/1.1 404 NOT FOUND", "404.html")
     };
 
-    let contents = fs::read_to_string("hello.html").unwrap();
+    // println!("file name: {}", filename);
+    let contents = fs::read_to_string(filename).unwrap();
     let response = format!(
-        "HTTP/1.1 200 OK\r\nContent-Length: {}\r\n\r\n{}",
+        "{}\r\nContent-Length: {}\r\n\r\n{}",
+        status_line,
         contents.len(),
         contents
     );
 
     stream.write(response.as_bytes()).unwrap();
     stream.flush().unwrap();
-
 }
